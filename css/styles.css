@@ -26,11 +26,12 @@ body {
   background-color: rgba(10, 4, 90, 0.6);  /* very dark blue */
   color: rgb(255, 255, 255);  /* white */
   margin-bottom: 50px; /* 100px */
-  transition: 2s;
+  transition: transform 0.3s ease; /* Smoothly returns to normal when unhovered; was .1 */
 }
 #clicker:hover {
   animation-name: grow;
   animation-duration: 60s;
+  animation-fill-mode: forwards; /* Keeps the element large when the animation ends */
 }
 
 h1 {
