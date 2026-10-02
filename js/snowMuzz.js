@@ -26,8 +26,9 @@ const period = [
 ];
 
 /* Emojis to substitute for snowflakes, just for fun */
-const fun = ['❤️', '💰', '💳', '📦', '🗃', '🫧', '🧯', '🎮', '☢', '📹', '☣', '📺', '🎥', '📽', '💻', '🖥', '⌨', '🖱', '💋'];
-
+const fun = ['❤️', '🌈', '⚡️', '💥', '✨', '💫', '👺', '🤑', '🐯', '🐹', '🐺', '😬', '🐵', '👹',
+             '🐶', '🐘', '🦉', '🐒', '🐱', '🐫', '🎂', '🍿', '☠️', '🤬', '🤓', '👌', '👨🏻‍💻', '🐷'];
+			 
 /* The CSS styles for the snowflakes and container */
 const cssString = `.snowfall-container {
     display: block;
@@ -152,7 +153,7 @@ function appendSnow() {
         flake.classList.add('snowflake');
         flake.setAttribute('aria-hidden', 'true');
         flake.setAttribute('role', 'presentation');
-        flake.innerText = '🥩';
+        flake.innerText = '️️😬';
         resetFlake(flake);
         flakes.push(flake);
         field.appendChild(flake);
